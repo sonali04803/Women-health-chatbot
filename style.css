@@ -1,0 +1,136 @@
+body {
+  background: #ffeef7; /* Soft light pink background */
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #ff4d94; /* Bright pink heading */
+  font-size: 26px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.chat-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat-container {
+  background: #fff0f5; /* Very light pink */
+  width: 500px; /* Smaller size for screen fit */
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(255, 77, 148, 0.3);
+  overflow: hidden;
+}
+
+.chat-box {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.bot-message, .user-message {
+  max-width: 75%;
+  margin: 8px 0;
+  padding: 10px 14px;
+  border-radius: 10px;
+  line-height: 1.4;
+}
+
+.bot-message {
+  background: #ffd6e8; /* Light pastel pink */
+  align-self: flex-start;
+  color: #4d0033; /* Dark text for readability */
+}
+
+.user-message {
+  background: #ffb6cc; /* Light pink bubble */
+  align-self: flex-end;
+  color: #3b0033;
+}
+
+form {
+  display: flex;
+  border-top: 1px solid #ff4d94;
+}
+
+input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  outline: none;
+  background: #ffe6f1;
+  color: #4d0033;
+  border-radius: 0 0 0 10px;
+}
+
+input::placeholder {
+  color: #ff99bb;
+}
+
+button {
+  background: #ff77a9;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0 0 10px 0;
+}
+
+button:hover {
+  background: #ff99bb;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.option-btn {
+  background: #ffb6cc;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 14px;
+  cursor: pointer;
+  color: #4d0033;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.option-btn:hover {
+  background: #ff77a9;
+  color: white;
+}
+
+.report {
+  background: #ffe6f1;
+  border-radius: 10px;
+  padding: 12px;
+  margin-top: 10px;
+  border: 1px solid #ff77a9;
+  color: #4d0033;
+  
+}
+
+.report h2 {
+  color: #ff4d94;
+}
+
+.report ul li {
+  margin: 4px 0;
+}
