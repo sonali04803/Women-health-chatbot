@@ -24,7 +24,7 @@ h1 {
 
 .chat-container {
   background: #fff0f5; /* Very light pink */
-  width: 500px; /* Smaller size for screen fit */
+  width: 360px; /* Default size */
   height: 520px;
   display: flex;
   flex-direction: column;
@@ -124,7 +124,6 @@ button:hover {
   margin-top: 10px;
   border: 1px solid #ff77a9;
   color: #4d0033;
-  
 }
 
 .report h2 {
@@ -133,4 +132,57 @@ button:hover {
 
 .report ul li {
   margin: 4px 0;
+}
+
+/* ====================== */
+/* Mobile Responsive CSS */
+/* ====================== */
+@media (max-width: 500px) {
+  .chat-container {
+    width: 90%; /* Fit most of screen width */
+    height: 80vh; /* Adapt height to screen */
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  input, button {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .option-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .bot-message, .user-message {
+    max-width: 90%;
+    font-size: 14px;
+  }
+
+  .report {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 350px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .chat-container {
+    height: 75vh;
+  }
+
+  input, button {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .option-btn {
+    padding: 5px 8px;
+    font-size: 11px;
+  }
 }
